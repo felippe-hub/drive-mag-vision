@@ -372,8 +372,8 @@ function Index() {
                 <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--sd-text-muted)] font-medium mb-3">Institucional</div>
                 <h3 className="text-[20px] font-semibold mb-6">Parcerias Institucionais · Outbound</h3>
                 <div className="space-y-4">
-                  <ChannelItem arrow title="Replicar modelo IES (referência: Ânima)" desc="Estruturar e executar parcerias com novas IES — UNOPAR, Uninove, Unip, Unisociesc, faculdades regionais. Contrato por instituição + LP exclusiva co-branded." tag="Parceria estratégica" />
                   <ChannelItem arrow title="Associações por praça (Seeb, CRECI, CRC)" desc="Prospecção e negociação de acesso às bases do Seeb e CRECI regionais. Palestra + LP dedicada com marca do parceiro. Leads com perfil já qualificado." tag="Outbound institucional" />
+                  <ChannelItem arrow title="Parcerias institucionais regionais" desc="Estruturação de parcerias com instituições e organizações regionais que concentram públicos aderentes ao perfil de corretor MAG. Contrato por parceiro + LP exclusiva co-branded." tag="Parceria estratégica" />
                   <ChannelItem arrow title="RH e outplacement" desc="Consultorias de outplacement atendem demissões de bancos e empresas — perfil comercial e motivação real para transição. Remuneração por candidato qualificado no programa MAG, não por lead frio." tag="Qualificação prévia" />
                 </div>
               </div>
