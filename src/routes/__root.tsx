@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SalesDrive · Proposta MAG Seguros" },
+      { name: "twitter:description", content: "Sistema escalável de captação de corretores MAG — segmentação, LPs por cluster, SEO e parcerias institucionais." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a2b52471-b0d7-41bd-a2ff-4b64a280790d/id-preview-f3cf01b3--9ada16a3-28cc-44f2-903a-72df250155d4.lovable.app-1777384990096.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a2b52471-b0d7-41bd-a2ff-4b64a280790d/id-preview-f3cf01b3--9ada16a3-28cc-44f2-903a-72df250155d4.lovable.app-1777384990096.png" },
     ],
     links: [
       {
