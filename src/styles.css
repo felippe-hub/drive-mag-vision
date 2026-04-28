@@ -157,3 +157,89 @@
     color: var(--color-foreground);
   }
 }
+
+/* SalesDrive proposal styles */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--sd-bg);
+  color: var(--sd-text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sd-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sd-orange);
+}
+.sd-label-muted { color: var(--sd-text-muted); }
+.sd-label-line {
+  width: 40px; height: 2px; border-radius: 2px;
+  background: var(--sd-orange); margin-top: 10px;
+}
+.sd-label-line-muted { background: var(--sd-border-light); }
+
+.sd-card {
+  background: var(--sd-bg-card);
+  border: 1px solid var(--sd-border);
+  border-radius: 10px;
+}
+.sd-card-dark {
+  background: var(--sd-bg);
+  border: 1px solid var(--sd-border);
+  border-radius: 10px;
+}
+.sd-tag {
+  display: inline-flex; align-items: center;
+  background: var(--sd-orange-dim);
+  color: var(--sd-orange);
+  border: 1px solid var(--sd-orange-border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.sd-tag-neutral {
+  display: inline-flex; align-items: center;
+  background: var(--sd-bg-elevated);
+  color: var(--sd-text-secondary);
+  border: 1px solid var(--sd-border-light);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+.sd-btn-primary {
+  background: var(--sd-orange);
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 14px;
+  transition: filter .15s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.sd-btn-primary:hover { filter: brightness(1.1); }
+.sd-btn-outline {
+  border: 1px solid var(--sd-border-light);
+  color: white;
+  background: transparent;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 14px;
+  transition: background .15s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.sd-btn-outline:hover { background: var(--sd-bg-elevated); }
+
+.sd-fade {
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.sd-fade.is-visible { opacity: 1; transform: none; }
+
+.sd-divider { height: 1px; background: var(--sd-border); width: 100%; }
