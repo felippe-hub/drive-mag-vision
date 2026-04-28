@@ -62,7 +62,7 @@ const phase1 = [
 ];
 
 const phase2 = [
-  { icon: "🎓", title: "Recém-formado em ADM/Economia/Contábeis", motivacao: "Carreira sólida + crescimento acelerado", gatilho: "Comece sua carreira com autonomia e propósito. A MAG forma você.", canais: "IES parceiras · LinkedIn" },
+  { icon: "🎓", title: "Recém-formado em ADM/Economia/Contábeis", motivacao: "Carreira sólida + crescimento acelerado", gatilho: "Comece sua carreira com autonomia e propósito. A MAG forma você.", canais: "LinkedIn · Comunidades acadêmicas" },
   { icon: "👩", title: "Mãe retomando carreira", motivacao: "Liberdade + propósito", gatilho: "Trabalhe nos seus horários. Construa uma renda que cresce ano a ano.", canais: "Meta Ads · grupos WhatsApp" },
   { icon: "💼", title: "Vendedor B2C em busca de recorrência", motivacao: "Ganho financeiro + escala", gatilho: "Você já sabe vender. Só está no produto errado.", canais: "Meta Ads · LinkedIn" },
   { icon: "📊", title: "Contador com escritório próprio", motivacao: "Propósito + carreira sólida", gatilho: "Você já protege o patrimônio dos seus clientes. Proteja também o que o sustenta.", canais: "CRC · LinkedIn" },
