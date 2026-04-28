@@ -162,27 +162,6 @@ function Index() {
                 </div>
               </Reveal>
             ))}
-
-            {/* Featured */}
-            <Reveal className="md:col-span-3">
-              <div className="sd-card-dark p-8" style={{ borderColor: "var(--sd-orange-border)" }}>
-                <div className="flex flex-wrap items-start justify-between gap-4">
-                  <div className="max-w-3xl">
-                    <span className="sd-tag mb-4">Parceria Ânima · Referência para MAG</span>
-                    <h3 className="text-[24px] font-semibold mt-3">Projeto IES + Captação</h3>
-                    <p className="mt-3 text-[15px] text-[var(--sd-text-secondary)] leading-[1.7]">
-                      Modelo de parceria institucional com grupo de educação para captação de candidatos qualificados a um programa de formação profissional. Estrutura replicável por praça — o mesmo modelo que propomos para a MAG.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Parceria Institucional", "Captação", "LP Dedicada"].map((t) => <span key={t} className="sd-tag-neutral">{t}</span>)}
-                    </div>
-                  </div>
-                  <a href="https://connect-propose-shine.lovable.app" target="_blank" rel="noreferrer" className="text-[13px] text-[var(--sd-orange)] hover:underline">
-                    connect-propose-shine.lovable.app ↗
-                  </a>
-                </div>
-              </div>
-            </Reveal>
           </div>
 
           <p className="mt-8 text-center text-[13px] italic text-[var(--sd-text-muted)]">
