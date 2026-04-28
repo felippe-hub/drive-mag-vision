@@ -406,7 +406,7 @@ function Index() {
             {[
               { t: "Mapear", d: "Cluster · ICP · Território criativo · Argumento" },
               { t: "Criar", d: "LP · Blog SEO · Copy · Criativos" },
-              { t: "Ativar", d: "Tráfego pago · Outbound · Parcerias IES" },
+              { t: "Ativar", d: "Tráfego pago · Outbound · Parcerias institucionais" },
               { t: "Otimizar", d: "A/B · CRO · Novos clusters · Relatório mensal" },
             ].map((s, i, arr) => (
               <Reveal key={s.t}>
