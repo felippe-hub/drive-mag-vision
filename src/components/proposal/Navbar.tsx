@@ -7,7 +7,6 @@ const links = [
   { href: "#cases", label: "Cases" },
   { href: "#proposta", label: "Proposta" },
   { href: "#canais", label: "Canais" },
-  { href: "#investimento", label: "Investimento" },
 ];
 
 export function Navbar() {
@@ -26,7 +25,7 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-        <a href="#investimento" className="hidden md:inline-flex sd-btn-primary !py-2 !px-4 !text-[13px]">
+        <a href="mailto:contato@salesdrive.com.br?subject=Proposta MAG Seguros" className="hidden md:inline-flex sd-btn-primary !py-2 !px-4 !text-[13px]">
           Falar com a equipe
         </a>
         <button className="md:hidden text-white" onClick={() => setOpen((v) => !v)} aria-label="Menu">
@@ -41,7 +40,7 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#investimento" onClick={() => setOpen(false)} className="sd-btn-primary justify-center">
+            <a href="mailto:contato@salesdrive.com.br?subject=Proposta MAG Seguros" onClick={() => setOpen(false)} className="sd-btn-primary justify-center">
               Falar com a equipe
             </a>
           </div>

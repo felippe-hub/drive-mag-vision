@@ -62,7 +62,7 @@ const phase1 = [
 ];
 
 const phase2 = [
-  { icon: "🎓", title: "Recém-formado em ADM/Economia/Contábeis", motivacao: "Carreira sólida + crescimento acelerado", gatilho: "Comece sua carreira com autonomia e propósito. A MAG forma você.", canais: "IES parceiras · LinkedIn" },
+  { icon: "🎓", title: "Recém-formado em ADM/Economia/Contábeis", motivacao: "Carreira sólida + crescimento acelerado", gatilho: "Comece sua carreira com autonomia e propósito. A MAG forma você.", canais: "LinkedIn · Comunidades acadêmicas" },
   { icon: "👩", title: "Mãe retomando carreira", motivacao: "Liberdade + propósito", gatilho: "Trabalhe nos seus horários. Construa uma renda que cresce ano a ano.", canais: "Meta Ads · grupos WhatsApp" },
   { icon: "💼", title: "Vendedor B2C em busca de recorrência", motivacao: "Ganho financeiro + escala", gatilho: "Você já sabe vender. Só está no produto errado.", canais: "Meta Ads · LinkedIn" },
   { icon: "📊", title: "Contador com escritório próprio", motivacao: "Propósito + carreira sólida", gatilho: "Você já protege o patrimônio dos seus clientes. Proteja também o que o sustenta.", canais: "CRC · LinkedIn" },
@@ -162,27 +162,6 @@ function Index() {
                 </div>
               </Reveal>
             ))}
-
-            {/* Featured */}
-            <Reveal className="md:col-span-3">
-              <div className="sd-card-dark p-8" style={{ borderColor: "var(--sd-orange-border)" }}>
-                <div className="flex flex-wrap items-start justify-between gap-4">
-                  <div className="max-w-3xl">
-                    <span className="sd-tag mb-4">Parceria Ânima · Referência para MAG</span>
-                    <h3 className="text-[24px] font-semibold mt-3">Projeto IES + Captação</h3>
-                    <p className="mt-3 text-[15px] text-[var(--sd-text-secondary)] leading-[1.7]">
-                      Modelo de parceria institucional com grupo de educação para captação de candidatos qualificados a um programa de formação profissional. Estrutura replicável por praça — o mesmo modelo que propomos para a MAG.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Parceria Institucional", "Captação", "LP Dedicada"].map((t) => <span key={t} className="sd-tag-neutral">{t}</span>)}
-                    </div>
-                  </div>
-                  <a href="https://connect-propose-shine.lovable.app" target="_blank" rel="noreferrer" className="text-[13px] text-[var(--sd-orange)] hover:underline">
-                    connect-propose-shine.lovable.app ↗
-                  </a>
-                </div>
-              </div>
-            </Reveal>
           </div>
 
           <p className="mt-8 text-center text-[13px] italic text-[var(--sd-text-muted)]">
@@ -393,8 +372,8 @@ function Index() {
                 <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--sd-text-muted)] font-medium mb-3">Institucional</div>
                 <h3 className="text-[20px] font-semibold mb-6">Parcerias Institucionais · Outbound</h3>
                 <div className="space-y-4">
-                  <ChannelItem arrow title="Replicar modelo IES (referência: Ânima)" desc="Estruturar e executar parcerias com novas IES — UNOPAR, Uninove, Unip, Unisociesc, faculdades regionais. Contrato por instituição + LP exclusiva co-branded." tag="Parceria estratégica" />
                   <ChannelItem arrow title="Associações por praça (Seeb, CRECI, CRC)" desc="Prospecção e negociação de acesso às bases do Seeb e CRECI regionais. Palestra + LP dedicada com marca do parceiro. Leads com perfil já qualificado." tag="Outbound institucional" />
+                  <ChannelItem arrow title="Parcerias institucionais regionais" desc="Estruturação de parcerias com instituições e organizações regionais que concentram públicos aderentes ao perfil de corretor MAG. Contrato por parceiro + LP exclusiva co-branded." tag="Parceria estratégica" />
                   <ChannelItem arrow title="RH e outplacement" desc="Consultorias de outplacement atendem demissões de bancos e empresas — perfil comercial e motivação real para transição. Remuneração por candidato qualificado no programa MAG, não por lead frio." tag="Qualificação prévia" />
                 </div>
               </div>
@@ -427,7 +406,7 @@ function Index() {
             {[
               { t: "Mapear", d: "Cluster · ICP · Território criativo · Argumento" },
               { t: "Criar", d: "LP · Blog SEO · Copy · Criativos" },
-              { t: "Ativar", d: "Tráfego pago · Outbound · Parcerias IES" },
+              { t: "Ativar", d: "Tráfego pago · Outbound · Parcerias institucionais" },
               { t: "Otimizar", d: "A/B · CRO · Novos clusters · Relatório mensal" },
             ].map((s, i, arr) => (
               <Reveal key={s.t}>
@@ -446,92 +425,6 @@ function Index() {
           <p className="mt-10 text-center text-[14px] text-[var(--sd-text-muted)] max-w-3xl mx-auto">
             Cada cluster passa por esse ciclo. Os que performam ganham mais investimento. Os que não performam são ajustados ou descartados. Sistema, não campanha.
           </p>
-        </div>
-      </section>
-
-      {/* INVESTIMENTO */}
-      <section id="investimento" className="py-24 px-6">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <SectionLabel>Investimento</SectionLabel>
-            <h2 className="text-[28px] md:text-[34px] font-semibold leading-tight">Transparência total. Sem surpresas.</h2>
-          </Reveal>
-
-          <div className="grid md:grid-cols-2 gap-6 mt-12">
-            <Reveal>
-              <div className="sd-card p-8 h-full" style={{ borderColor: "var(--sd-orange-border)" }}>
-                <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--sd-orange)] font-medium">Setup · Pagamento único</div>
-                <div className="mt-4 text-[44px] font-bold leading-none" style={{ color: "var(--sd-orange)" }}>R$ 15.000</div>
-                <div className="mt-3 text-[13px] text-[var(--sd-text-muted)]">Entregue em 30 dias · LPs no ar em 72h após kickoff</div>
-                <div className="my-6 sd-divider" />
-                <ul className="space-y-3">
-                  {[
-                    "2 primeiras LPs desenvolvidas (clusters bancário + CRECI), responsivas e integradas ao funil MAG",
-                    "Mapeamento completo de clusters, ICPs e territórios criativos por persona",
-                    "Integração técnica: pixel, tags de origem, CRM",
-                    "Estrutura de SEO: pesquisa de keywords, arquitetura de blog, briefing dos 4 primeiros artigos",
-                    "Abertura de 3 parceiros institucionais prioritários (Seeb SP, CRECI SP, 1 IES)",
-                  ].map((l) => (
-                    <li key={l} className="flex gap-3 text-[14px] text-[var(--sd-text-secondary)] leading-[1.6]">
-                      <Check size={16} className="mt-1 shrink-0" style={{ color: "var(--sd-orange)" }} />
-                      <span>{l}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Reveal>
-
-            <Reveal>
-              <div className="sd-card p-8 h-full">
-                <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--sd-text-muted)] font-medium">Retainer mensal</div>
-                <div className="mt-4 text-[44px] font-bold leading-none text-white">R$ 8.000<span className="text-[16px] font-normal text-[var(--sd-text-muted)]">/mês</span></div>
-                <div className="mt-3 text-[13px] text-[var(--sd-text-muted)]">Contrato mínimo de 3 meses</div>
-                <div className="my-6 sd-divider" />
-                <table className="w-full text-[14px]">
-                  <tbody>
-                    {[
-                      ["Novas LPs por cluster", "1–2 por mês"],
-                      ["Artigos SEO", "4 por mês"],
-                      ["Parcerias ativas", "3–5 contatos/mês"],
-                      ["Relatório de clusters", "1 por mês"],
-                      ["Otimização CRO das LPs", "Contínuo"],
-                      ["Suporte ao tráfego MAG", "Sob demanda"],
-                    ].map(([k, v]) => (
-                      <tr key={k} className="border-b border-[#262626] last:border-0">
-                        <td className="py-3 text-[var(--sd-text-secondary)]">{k}</td>
-                        <td className="py-3 text-right text-white">{v}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </Reveal>
-          </div>
-
-          <Reveal>
-            <div className="sd-card p-8 mt-6 text-center">
-              <p className="text-[15px] md:text-[16px] leading-[1.7] text-[var(--sd-text-secondary)] max-w-3xl mx-auto">
-                R$ 8.000/mês é o custo de um analista júnior sem operação. O que entregamos é uma máquina completa de microsegmentação — com LPs, SEO e parcerias institucionais que o time interno não teria capacidade de rodar em paralelo.
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="my-10 sd-divider" />
-
-          <div className="grid md:grid-cols-3 gap-5">
-            {[
-              ["Break-even", "1 corretor ativo / mês para cobrir o retainer"],
-              ["Piloto", "90 dias · 2 clusters · resultado mensurável antes de escalar"],
-              ["Mínimo de LPs no ar", "4 páginas ativas ao final do mês 1"],
-            ].map(([k, v]) => (
-              <Reveal key={k}>
-                <div className="sd-card p-6 h-full">
-                  <div className="text-[11px] uppercase tracking-[0.1em] text-[var(--sd-orange)] font-medium">{k}</div>
-                  <p className="mt-3 text-[15px] text-white leading-[1.6]">{v}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
