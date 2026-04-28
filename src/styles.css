@@ -237,9 +237,10 @@ body {
 .sd-btn-outline:hover { background: var(--sd-bg-elevated); }
 
 .sd-fade {
-  opacity: 0; transform: translateY(12px);
+  opacity: 1; transform: none;
   transition: opacity .5s ease, transform .5s ease;
 }
+.js .sd-fade { opacity: 0; transform: translateY(12px); }
 .sd-fade.is-visible { opacity: 1; transform: none; }
 
 .sd-divider { height: 1px; background: var(--sd-border); width: 100%; }
