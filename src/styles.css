@@ -68,17 +68,23 @@
   --foreground: oklch(1 0 0);
 
   --sd-bg: #0A0A0A;
-  --sd-bg-card: #111111;
-  --sd-bg-elevated: #1A1A1A;
-  --sd-border: #262626;
-  --sd-border-light: #333333;
+  --sd-bg-card: #0E1020;
+  --sd-bg-elevated: #15172B;
+  --sd-border: #1F2236;
+  --sd-border-light: #2A2D45;
   --sd-text-primary: #FFFFFF;
-  --sd-text-secondary: #A1A1AA;
-  --sd-text-muted: #71717A;
+  --sd-text-secondary: #A5A8C2;
+  --sd-text-muted: #6E7196;
   --sd-accent: #F5F5F5;
-  --sd-orange: #FF6B35;
-  --sd-orange-dim: rgba(255,107,53,0.125);
-  --sd-orange-border: rgba(255,107,53,0.25);
+  --sd-cyan: #22D3EE;
+  --sd-blue: #3B82F6;
+  --sd-violet: #8B5CF6;
+  --sd-magenta: #C026D3;
+  --sd-orange: #8B5CF6; /* legacy alias -> violet */
+  --sd-orange-dim: rgba(139,92,246,0.14);
+  --sd-orange-border: rgba(139,92,246,0.35);
+  --sd-gradient: linear-gradient(135deg, #22D3EE 0%, #3B82F6 45%, #8B5CF6 100%);
+  --sd-gradient-soft: linear-gradient(135deg, rgba(34,211,238,0.18), rgba(139,92,246,0.18));
   --sd-green: #22C55E;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
@@ -172,12 +178,12 @@ body {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--sd-orange);
+  color: var(--sd-cyan);
 }
 .sd-label-muted { color: var(--sd-text-muted); }
 .sd-label-line {
   width: 40px; height: 2px; border-radius: 2px;
-  background: var(--sd-orange); margin-top: 10px;
+  background: var(--sd-gradient); margin-top: 10px;
 }
 .sd-label-line-muted { background: var(--sd-border-light); }
 
@@ -213,16 +219,17 @@ body {
   font-size: 11px;
 }
 .sd-btn-primary {
-  background: var(--sd-orange);
+  background: var(--sd-gradient);
   color: white;
   font-weight: 500;
   border-radius: 8px;
   padding: 12px 22px;
   font-size: 14px;
-  transition: filter .15s;
+  transition: filter .15s, transform .15s;
+  box-shadow: 0 8px 30px -10px rgba(139,92,246,0.55);
   display: inline-flex; align-items: center; gap: 8px;
 }
-.sd-btn-primary:hover { filter: brightness(1.1); }
+.sd-btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
 .sd-btn-outline {
   border: 1px solid var(--sd-border-light);
   color: white;
@@ -244,3 +251,15 @@ body {
 .sd-fade.is-visible { opacity: 1; transform: none; }
 
 .sd-divider { height: 1px; background: var(--sd-border); width: 100%; }
+
+.sd-text-gradient {
+  background: var(--sd-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.sd-glow {
+  position: absolute; inset: -1px; border-radius: inherit; pointer-events: none;
+  background: var(--sd-gradient); opacity: 0; filter: blur(24px);
+  transition: opacity .3s;
+}
